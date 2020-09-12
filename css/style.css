@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+}
+
+header{
+    background: rgb(61, 170, 97); 
+    border-bottom: .5px solid rgba(255, 255, 255, 0.29);
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+header nav a{
+    color: #fff;
+    transition: .3S;
+}
+
+header nav .logo{
+    font-size: 2.2rem;
+    position: relative;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-top: 5px;  
+    transition: .3S;  
+    text-decoration: none;
+    left: 50px;
+}
+
+.dis-banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(61, 170, 97);
+    height: 80vh;
+}
+
+.dis-banner .dis-cont{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 100px;
+    color: #fff;
+}
+
+.dis-banner .dis-cont h1{
+    font-size: 5rem;
+}
+
+.dis-banner .dis-cont p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.dis-banner .dis-cont .btn{
+    padding: 10px 30px;
+    background: #fff;
+}
+
+.dis-banner .dis-cont .btn:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.service{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.service .ser-cont-left{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(216, 216, 216);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px  rgba(131, 131, 131, 0.596);
+}
+
+.service .ser-cont-left img{
+    width: 100px;
+    margin-right: 40px;
+}
+
+.service .ser-cont-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(216, 216, 216);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(131, 131, 131, 0.596);
+}
+
+.service .ser-cont-right img{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.service p{
+    font-size: 1.2rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.service h2{
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+    background:  rgb(159, 238, 157);
+    width: 60px;
+    border-radius: 5px;
+}
