@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
     /* font-family: 'Noto Sans JP', sans-serif; */
+    scroll-behavior:  smooth;
 }
 
 header{
     background: rgb(61, 170, 97); 
     border-bottom: .5px solid rgba(255, 255, 255, 0.29);
+    position: fixed;
+    width: 100%;
+    z-index: 1;   
 }
 
 header nav{
-    position: relative;
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +34,25 @@ header nav .logo{
     transition: .3S;  
     text-decoration: none;
     left: 50px;
+}
+
+header .nav-link:hover{
+    color: darkgreen;
+}
+
+header .active{
+    /* color: darkgreen; */
+    border: 1px solid rgba(255, 255, 255, 0.37);
+    border-radius: 5px;
+}
+
+header .active:hover{
+    color: darkgreen;
+    background: rgba(255, 255, 255, 0.158);
+}
+
+header .logo:hover{
+    color: darkgreen;
 }
 
 .dis-banner{
@@ -62,6 +85,8 @@ header nav .logo{
 .dis-banner .dis-cont .btn{
     padding: 10px 30px;
     background: #fff;
+    color:  rgb(61, 170, 97);
+    font-weight: 600;
 }
 
 .dis-banner .dis-cont .btn:hover{
@@ -129,7 +154,7 @@ header nav .logo{
 
 .service h2{
     text-align: center;
-    margin-top: 120px;
+    margin-top: 80px;
     display: inline-block;
     background:  rgb(159, 238, 157);
     width: 60px;
@@ -143,7 +168,7 @@ header nav .logo{
     justify-content: center;
     align-items: center;
     background: rgb(61, 170, 97);
-    color: ;
+    /* color: ; */
 }
 
 .work .work-cont{
@@ -163,7 +188,7 @@ header nav .logo{
     padding: 30px;
     border: 1px solid rgba(255, 255, 255, 0.281); 
     border-radius: 5px;
-    box-shadow: 2px 1px 3px rgb(117, 117, 117)39);
+    box-shadow: 2px 1px 3px rgb(117, 117, 117 39);
 }
 
 /* .work .work-cont .left{
@@ -194,4 +219,272 @@ header nav .logo{
     background: #fff;
     width: 40px;
     border-radius: 5px;
+}
+
+/* .portfolio{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .port-cont .itembx{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.portfolio .port-cont .itembx .items{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 10px;
+    background: rgb(194, 181, 181);
+    border: 1px solid #fff;
+} */
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+}
+
+.item{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.container .item img{
+    width: 100%;
+}
+
+.team{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.team h2{
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin-top: 80px;
+    background:  rgb(159, 238, 157);
+    width: 65px;
+    border-radius: 5px;
+}
+
+.team .team-cont{
+    width: 100%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .team-cont .items{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background: chocolate; */
+    text-align: center;
+    border: 1px solid rgb(61, 170, 97);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 2px 3px  rgba(0, 0, 0, 0.315);
+    transition: .5s ease-in;
+}
+
+.team .team-cont .items:hover{
+    background: chocolate;
+   
+}
+
+.team .team-cont .items img{
+    width: 100px;
+    background: chocolate;
+    border-radius: 50%;
+    /* box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.356); */
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+/* .team .team-cont .items img:hover{
+    box-shadow: none;
+} */
+
+.contact{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px; */
+}
+
+.contact .cont-left h2{
+    float: right;
+    position: relative;
+    top: 70px;
+    right: 10px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.contact .cont-left{
+    position: relative;
+    height: 800px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    background:  rgb(61, 170, 97);
+    text-align: center;
+}
+
+.contact .cont-left .cont-item{
+    position: relative;
+     width: 100%;
+     margin-top: 140px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .cont-left .items{
+    position: relative;
+    display: inline-block;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact .cont-left img{
+    float: left;
+}
+
+.contact .cont-left .items h3{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.contact .cont-left img{
+    width: 70px;
+}
+
+.contact .cont-right{
+    position: relative;
+    height: 900px;
+    width: 50%;   
+}
+
+.contact .cont-right{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .cont-right form{
+    position: relative;
+}
+
+.contact .cont-right input{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    border: 1px solid  rgb(61, 170, 97);
+    border-radius: 5px;
+}
+
+.contact .cont-right .text-area{
+    padding: 10px;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    resize: vertical;
+    border: 1px solid  rgb(61, 170, 97);
+    border-radius: 5px;
+}
+
+.contact .cont-right .btn{
+    position: relative;
+    background:  rgb(61, 170, 97);
+    float: right;
+    padding: 10px;
+    width: 100px;
+    right: 10px;
+    color: #fff;
+}
+
+.contact .cont-right .btn:hover{
+    background: #fff;
+    color:  rgb(61, 170, 97);
+    border: 1px solid  rgb(61, 170, 97);
+    font-weight: 600;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:  rgb(29, 122, 52);
+    margin-top: 23px;
+}
+
+footer .foot-cont{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+}
+
+footer h3{
+    position: relative;
+    color: #fff;
+    font-size: 2.3rem;
+}
+
+footer .foot-cont .get{
+    position: relative;
+    padding: 10px;
+    top: 10px;
+    color: #fff;
+}
+
+footer p{
+    position: relative;
+    bottom: 0;
+    margin-top: 40px;
+    font-size: .9rem;
+    color: #fff;
+}
+
+footer .gotoup{
+    position: relative;
+    width: 40px;
+    text-align: center;
+    float: right;
+    bottom: 100px;
+    right: 100px;
 }
